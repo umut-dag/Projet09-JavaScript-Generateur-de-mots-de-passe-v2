@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Générateur de mot de passe (HTML, CSS et JavaScript)</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="http://dev.dagdemir.fr/favicon.ico" />
+    </head>
+
+    <body>
+        <div class="container">
+            <fieldset>
+                <legend class="legend">Générateur de mots de passe en JavaScript v2</legend>
+                <table>
+                    <div class="boite">
+                        <div class="zone1">
+                            <div class="afficheur">
+                                <span id="afficheur">Attente ...</span>
+                            </div>
+                        </div>
+                        <div class="zone2">
+                            <div class="checkbox-label">
+                                <label for="longueur">Longueur du mot de passe</label>
+                                <input id="longueur" value="20" type="number" min="6" max="24" />
+                            </div>
+                            <div class="checkbox-label">
+                                <label for="majuscules">Lettres en majuscule (excepté O et I)</label>
+                                <input id="majuscules" type="checkbox" checked />
+                            </div>
+                            <div class="checkbox-label">
+                                <label for="minuscules">Lettres en minuscule (excepté o et l)</label>
+                                <input id="minuscules" type="checkbox" checked />
+                            </div>
+                            <div class="checkbox-label">
+                                <label for="chiffres">Chiffres (excepté 0)</label>
+                                <input id="chiffres" type="checkbox" checked />
+                            </div>
+                            <div class="checkbox-label">
+                                <label for="symboles">Symboles (seulement _ + @ & $)</label>
+                                <input id="symboles" type="checkbox" checked />
+                            </div>
+                            <button class="button" id="button">Générer un mot de passe</button>
+                        </div>
+                    </div>
+                </table>
+            </fieldset>
+            <div class="footer">Optimisé pour mobile</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
